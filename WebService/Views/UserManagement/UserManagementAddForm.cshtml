@@ -1,0 +1,26 @@
+﻿@model UserAddViewModel
+<div>
+    <header class="major">
+        <h2>Добавление пользователя</h2>
+    </header>
+    <div class="div-box">
+        <form asp-area="" asp-controller="usermanagement" asp-action="AddUser" method="post">
+            <div asp-validation-summary="All"></div>
+            <div>
+                <label asp-for="Name"></label>
+                <input asp-for="Name" />
+            </div>
+            <div>
+                <label asp-for="Login"></label>
+                <input asp-for="Login" />
+            </div>
+            <div>
+                <label asp-for="Password"></label>
+                <input asp-for="Password" />
+            </div>
+            <div>
+                <br /><input type="submit" value="Добавить" />
+            </div>
+        </form>
+    </div>
+</div>

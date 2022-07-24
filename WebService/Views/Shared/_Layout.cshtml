@@ -1,0 +1,13 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    @await Html.PartialAsync("MetatagsPartial")
+    @await Html.PartialAsync("CssPartial")
+</head>
+<body class="is-preload">
+    <div id="wrapper" class="fade-in">
+        @RenderBody()
+    </div>
+    @await Html.PartialAsync("ScriptsPartial")
+</body>
+</html>

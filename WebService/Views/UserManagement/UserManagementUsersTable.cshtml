@@ -1,0 +1,28 @@
+﻿@model UserAddViewModel
+<div>
+    <header class="major">
+        <h2>Таблица пользователей</h2>
+    </header>
+    <div class="table-wrapper">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Логин</th>
+                    <th>Имя</th>
+                    <th>Пароль</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (int i = 0; i < @Model.infoTable.Count; i++)
+                {
+                    <tr>
+                        <td>@Model.infoTable[i].Login</td>
+                        <td>@Model.infoTable[i].Name</td>
+                        <td>@Model.infoTable[i].Password</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

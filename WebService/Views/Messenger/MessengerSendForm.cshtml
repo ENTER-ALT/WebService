@@ -1,0 +1,23 @@
+﻿@model SendMessageViewModel
+<div>
+    <header class="major">
+        <h2>Мессенджер</h2>
+    </header>
+        <div>
+        <form asp-area="" asp-controller="messenger" asp-action="Send" method="post">
+            <div asp-validation-summary="All"></div>
+            <div>
+                <label asp-for="Login"></label>
+                <input asp-for="Login" />
+            </div>
+            <div class="div-box">
+                <label asp-for="Message"></label>
+                <textarea asp-for="Message" id="input" placeholder="Введите сообщение" rows="4">
+                </textarea>
+            </div>
+            <div>
+                <br /><input type="submit" value="Добавить" />
+            </div>
+        </form>
+    </div>
+</div>
