@@ -1,11 +1,9 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿
 using Microsoft.AspNetCore.Mvc;
 using WebService.Domain;
 using WebService.Domain.Abstractions;
 using WebService.Domain.Entities;
 using WebService.Models;
-using WebService.Structs;
-using WebService.Enums;
 using WebService.Service;
 
 namespace WebService.Controllers

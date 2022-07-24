@@ -4,8 +4,6 @@ using WebService.Domain.Abstractions;
 using WebService.Domain.Entities;
 using WebService.Models;
 using WebService.Service;
-using WebService.Structs;
-using WebService.Enums;
 
 namespace WebService.Controllers
 {
