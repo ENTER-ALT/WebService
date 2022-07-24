@@ -2657,13 +2657,15 @@ table.alt tbody tr td {
 body.is-preload #wrapper.fade-in:before {
   opacity: 1;
 }
+#wrapper > .image-box {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
 @media screen and (orientation: portrait) {
   #wrapper > .bg {
     background-size: auto, auto, auto 175%;
   }
-}
-textarea[id="input"] {
-    resize: none;
 }
 
 /* Intro */
@@ -3302,4 +3304,10 @@ body.is-preload #intro {
     box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2);
     visibility: visible;
   }
+}
+
+.image-box {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
 }
